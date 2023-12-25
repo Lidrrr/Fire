@@ -10,6 +10,11 @@
 	--alt: #918d61;
 }
 
+img{
+	margin-top: -20%;
+	margin-left: -20%;
+}
+
 * {
 	box-sizing: border-box;
 }

@@ -4,6 +4,8 @@
     box-sizing: border-box;
   }
   
+  
+
   .clearfix:after {
        visibility: hidden;
        display: block;
@@ -30,6 +32,62 @@
     background-attachment: fixed;
   }
   
+/* 按钮样式 */
+.button {
+  margin-top: 2%;
+  margin-left: 1%;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 0.75em 1em;
+    color: #fff;
+    border: 0.15em solid #fff;
+    border-radius: 2em;
+    transition: 4s;
+}
+
+.button:before,
+.button:after {
+    content: "";
+    position: absolute;
+    top: -1.5em;
+    z-index: -1;
+    width: 200%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 40%;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: 4s;
+}
+
+.button:before {
+    left: -80%;
+    transform: translate3d(0, 5em, 0) rotate(-340deg);
+}
+
+.button:after {
+    right: -80%;
+    transform: translate3d(0, 5em, 0) rotate(390deg);
+}
+
+.button:hover,
+.button:focus {
+    color: white;
+}
+
+.button:hover:before,
+.button:hover:after,
+.button:focus:before,
+.button:focus:after {
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
   ::selection {
       color: #ff1493;
       background: #9932cc;

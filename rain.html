@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rain.css">
+</head>
+<body>
+    <div id="rain-container"></div>
+    <div id="text-container">
+        <h1>Scroll down for more...</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+    <script src="rain.js"></script>
+    <script>
+        // 监听滚动事件
+        window.onscroll = function () {
+            // 获取滚动位置
+            var scrollY = window.scrollY || window.pageYOffset;
+
+            // 设置显示或隐藏文字的条件，这里设置滚动超过 200px 显示文字
+            if (scrollY > 500) {
+                document.getElementById('text-container').style.display = 'block';
+            } else {
+                document.getElementById('text-container').style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>

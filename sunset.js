@@ -3,6 +3,18 @@ var myWidth = 0, myHeight = 0;
 var mouseIsDown = false;
 var mouseIsDownDivision = false;
 
+window.addEventListener('scroll', function () {
+  let scrollPosition = window.scrollY;
+  const windowHeight = window.innerHeight;
+
+  // 假设当滚动到页面的一半时出现新元素
+  if (scrollPosition > windowHeight / 3) {
+    newElement.style.opacity = 1;
+  } else {
+    newElement.style.opacity = 0;
+  }
+});
+
 document.addEventListener('mousemove', function(e){ 
     mouse.x = e.clientX || e.pageX; 
     mouse.y = e.clientY || e.pageY 

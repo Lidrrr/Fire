@@ -1,9 +1,24 @@
 body {
     cursor: pointer;
-    overflow: hidden;
+    height: 1500px;
+    overflow-x: hidden;
     background-color: black;
   }
   
+  #newElement {
+    opacity: 0;
+    margin-top:1150px;
+    margin-left: auto;
+    height: 2000px;
+    width: 1200px;
+    transition: opacity 0.5s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #sun {
       position: absolute;
       top: 0px;
