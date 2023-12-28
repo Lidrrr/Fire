@@ -7,8 +7,8 @@ body {
   
   #newElement {
     opacity: 0;
-    margin-top:1150px;
-    margin-left: auto;
+    margin-top:800px;
+    margin-left: 100px;
     height: 2000px;
     width: 1200px;
     transition: opacity 0.5s ease-in-out;
